@@ -1,6 +1,11 @@
-# GoSync Client
+# GoSync S3 Client
 
-A production-ready, cross-platform sync client for S3 (MinIO) that provides true bidirectional synchronization similar to MegaSync, Dropbox, or OneDrive.
+A cross-platform sync client for S3 (MinIO) that provides true bidirectional synchronization similar to MegaSync, Dropbox, or OneDrive.
+
+> [!WARNING]
+> This project is currently in **early development** and is **not ready for production use**. \
+> Core components like the gRPC server, testing infrastructure, and production storage backends are incomplete. \
+> Do not attempt to use this in any production or critical environment.
 
 ## Features
 
