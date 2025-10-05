@@ -766,11 +766,11 @@ GoSync is released under the [Apache License 2.0](LICENSE).
 
 ## Support
 
-- 📖 [Documentation](https://github.com/mwantia/gosync/wiki)
-- 💬 [Discussions](https://github.com/mwantia/gosync/discussions)
-- 🐛 [Issue Tracker](https://github.com/mwantia/gosync/issues)
-- 📧 Email: support@gosync.dev
+For issues and questions:
+- Open an issue on GitHub
+- Check existing issues for solutions
+- Review logs at `~/.minio-sync/`
 
 ---
 
-**GoSync** - Organize once, access everywhere.
+**Note**: This is a True Sync Client that maintains a full local copy. For large datasets where you don't need all files locally, consider implementing selective sync (planned feature).
