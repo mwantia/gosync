@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/mwantia/gosync/cmd/gosync/cli"
+	"github.com/mwantia/gosync/cmd/gosync/cli/client"
 	"github.com/mwantia/gosync/cmd/gosync/cli/server"
 )
 
@@ -23,6 +24,8 @@ func main() {
 
 	root.AddCommand(server.NewAgentCommand())
 	root.AddCommand(server.NewConfigCommand())
+
+	root.AddCommand(client.NewVfsCommand())
 
 	if err := root.Execute(); err != nil {
 		fmt.Println(err)

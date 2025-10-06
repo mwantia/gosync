@@ -42,14 +42,15 @@ type logEntry struct {
 }
 
 func NewLoggerService(name string, cfg config.LogServerConfig) LoggerService {
+	level := Parse(cfg.Level)
+
 	impl := &LoggerServiceImpl{
 		cfg:   cfg,
 		name:  name,
-		level: Parse("INFO"),
+		level: level,
 	}
 
 	impl.setupWriter()
-
 	return impl
 }
 

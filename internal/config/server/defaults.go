@@ -20,6 +20,13 @@ func GetServerDefault() BaseServerConfig {
 				Compress:   false,
 			},
 		},
+
+		Metadata: MetadataServerConfig{
+			Type: "sqlite",
+			SQLite: MetadataSQLiteConfig{
+				Path: "./gosync.db",
+			},
+		},
 	}
 }
 
@@ -38,4 +45,7 @@ func setDefaults() {
 	viper.SetDefault("log.rotation.max_backups", defaults.Log.Rotation.MaxBackups)
 	viper.SetDefault("log.rotation.max_age", defaults.Log.Rotation.MaxAge)
 	viper.SetDefault("log.rotation.compress", defaults.Log.Rotation.Compress)
+
+	viper.SetDefault("metadata.type", defaults.Metadata.Type)
+	viper.SetDefault("metadata.sqlite.path", defaults.Metadata.SQLite.Path)
 }

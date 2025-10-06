@@ -5,7 +5,7 @@ env:
     GOOS: linux
     MAIN_PATH: ./cmd/gosync/main.go
     BUILD_PATH: ./build/gosync
-    TEST_CONFIG_PATH: ./tests/gosync.yaml
+    TEST_CONFIG_PATH: ./test/gosync.yaml
 
 dotenv: ['.env']
 

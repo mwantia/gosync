@@ -1,6 +1,8 @@
 package log
 
-import "strings"
+import (
+	"strings"
+)
 
 type LogLevel int
 

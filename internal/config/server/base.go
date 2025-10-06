@@ -9,7 +9,8 @@ import (
 type BaseServerConfig struct {
 	ShutdownTimeout string `mapstructure:"shutdown_timeout" yaml:"shutdown_timeout"`
 
-	Log LogServerConfig `mapstructure:"log" yaml:"log"`
+	Log      LogServerConfig      `mapstructure:"log" yaml:"log"`
+	Metadata MetadataServerConfig `mapstructure:"metadata" yaml:"metadata"`
 }
 
 func LoadServerConfig() (*BaseServerConfig, error) {

@@ -534,12 +534,12 @@ gosync version                           # Show version
 ### Virtual Filesystem
 
 ```bash
-gosync ls [path]                         # List filesystem contents
-gosync ls                                # List all backends
-gosync ls selfhosted                     # List backend contents
-gosync ls selfhosted/pictures            # List specific path
-gosync ls filters/photos/red             # List filter results
-gosync ls -lh selfhosted/pictures        # Long format, human-readable
+gosync vfs ls [path]                         # List filesystem contents
+gosync vfs ls                                # List all backends
+gosync vfs ls selfhosted                     # List backend contents
+gosync vfs ls selfhosted/pictures            # List specific path
+gosync vfs ls filters/photos/red             # List filter results
+gosync vfs ls -lh selfhosted/pictures        # Long format, human-readable
 ```
 
 ### Backend Management
